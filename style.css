@@ -661,3 +661,10 @@ footer {
 
     display: block;
 }
+.avatar img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center 25%;
+    transform: translate(-8%, -5%);
+}
