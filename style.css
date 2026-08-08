@@ -636,20 +636,7 @@ footer {
   .count-badge {
     margin: -20px 0 28px;
   }
-.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px;
-}
 
-.avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
   .contact-actions {
     width: 100%;
   }
