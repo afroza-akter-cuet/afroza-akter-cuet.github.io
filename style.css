@@ -713,3 +713,23 @@ footer {
     gap: 5px;
   }
 }
+
+
+/* ---------- Publications: two columns only ---------- */
+.publication-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.publication {
+  grid-template-columns: 48px 1fr;
+}
+
+/* On smaller screens, return publications to one column */
+@media (max-width: 850px) {
+  .publication-list {
+    grid-template-columns: 1fr;
+  }
+}
