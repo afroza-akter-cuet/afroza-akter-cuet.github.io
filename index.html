@@ -8,459 +8,305 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">Afroza Akter</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home">Afroza Akter</a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#background">Background</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<main>
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Lecturer · Researcher · Computer Vision</p>
+        <h1>Afroza Akter</h1>
+        <h2>Computer Science &amp; Engineering</h2>
+        <p class="hero-text">
+          Lecturer at Chittagong University of Engineering &amp; Technology (CUET), with research interests in
+          computer vision, deep learning, medical imaging, and intelligent systems.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="cv.pdf" target="_blank" rel="noopener">View CV</a>
+          <a class="button secondary" href="#publications">Publications</a>
+        </div>
+        <div class="quick-links">
+          <a href="mailto:afroza.akter.cse22@gmail.com">Email</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=2WXz2ScAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Afroza-Akter-10" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="https://afroza-akter-cuet.github.io/" target="_blank" rel="noopener">Homepage</a>
+        </div>
+      </div>
 
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <aside class="summary-card" aria-label="Profile summary">
+        <p class="summary-kicker">At a glance</p>
+        <div class="stat-row">
+          <div><strong>14</strong><span>Publications</span></div>
+          <div><strong>3.81</strong><span>BSc CGPA</span></div>
+          <div><strong>3.75</strong><span>MSc CGPA</span></div>
+        </div>
+        <div class="summary-line"><span>Current role</span><strong>Lecturer, CSE, CUET</strong></div>
+        <div class="summary-line"><span>Focus</span><strong>Vision · DL · Medical Imaging</strong></div>
+      </aside>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Lecturer · Researcher · Computer Vision Enthusiast</p>
-          <h1>Afroza Akter</h1>
-          <h2>Computer Science &amp; Engineering</h2>
-
-          <p class="hero-text">
-            Lecturer at Chittagong University of Engineering &amp; Technology (CUET), Bangladesh,
-            with research interests in computer vision, deep learning, medical imaging,
-            intelligent systems, and real-world applications of artificial intelligence.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button primary" href="cv.pdf" target="_blank" rel="noopener">View CV</a>
-            <a class="button secondary" href="#publications">Explore Publications</a>
-          </div>
-
-          <div class="quick-links">
-            <a href="mailto:afroza.akter.cse22@gmail.com">Email</a>
-            <a href="https://www.researchgate.net/profile/Afroza-Akter-10" target="_blank" rel="noopener">ResearchGate</a>
-          </div>
-        </div>
-
-        <aside class="profile-card" aria-label="Profile summary">
-          <div class="avatar"><img src="profile.jpeg" alt="Afroza Akter"></div>
-          <h3>Afroza Akter</h3>
-          <p>Lecturer, Department of CSE</p>
-          <p>Chittagong University of Engineering &amp; Technology</p>
-          <div class="profile-stats">
-            <div><strong>14</strong><span>Publications</span></div>
-            <div><strong>3.81</strong><span>BSc CGPA</span></div>
-            <div><strong>3.75</strong><span>MSc CGPA</span></div>
-          </div>
-        </aside>
+  <section id="about" class="section compact-section">
+    <div class="container split-grid">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Academic profile</h2>
       </div>
-    </section>
+      <div class="prose">
+        <p>
+          I am a Lecturer in the Department of Computer Science and Engineering at CUET.
+          My research focuses on intelligent systems for healthcare, safety, and infrastructure monitoring.
+          My undergraduate thesis explored skin lesion segmentation using transfer learning, while my current
+          MSc research investigates a multi-modal deep learning framework for road damage detection.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="section">
-      <div class="container split-grid">
+  <section id="background" class="section soft-bg">
+    <div class="container">
+      <div class="section-heading-row">
         <div>
-          <p class="section-label">About</p>
-          <h2>Academic profile</h2>
-        </div>
-
-        <div class="prose">
-          <p>
-            I am a Lecturer in the Department of Computer Science and Engineering at
-            Chittagong University of Engineering &amp; Technology (CUET), Bangladesh.
-            My work focuses on developing intelligent systems that address practical
-            challenges in healthcare, safety, and infrastructure monitoring.
-          </p>
-          <p>
-            My undergraduate thesis explored skin lesion image segmentation using transfer learning.
-            My current MSc research investigates a multi-modal deep learning framework for road damage
-            detection. Across my research projects, I have worked with deep learning, computer vision,
-            medical image analysis, machine learning, and explainable artificial intelligence.
-          </p>
+          <p class="section-label">Background</p>
+          <h2>Education &amp; experience</h2>
         </div>
       </div>
-    </section>
 
-    <section id="experience" class="section soft-bg">
-      <div class="container">
-        <p class="section-label">Experience</p>
-        <h2>Academic and professional experience</h2>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">Nov 2023 – Present</div>
-            <div class="timeline-content">
-              <h3>Lecturer, Department of Computer Science &amp; Engineering</h3>
+      <div class="background-grid">
+        <div>
+          <h3 class="subheading">Education</h3>
+          <div class="compact-list">
+            <article>
+              <div class="item-top"><strong>M.Sc. in CSE</strong><span>Pursuing</span></div>
               <p>Chittagong University of Engineering &amp; Technology (CUET)</p>
-              <span>Chittagong, Bangladesh</span>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Jul 2023 – Nov 2023</div>
-            <div class="timeline-content">
-              <h3>Lecturer, Department of Computer Science &amp; Engineering</h3>
-              <p>United International University</p>
-              <span>Dhaka, Bangladesh</span>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Nov 2022 – Jul 2023</div>
-            <div class="timeline-content">
-              <h3>Lecturer, Department of Computer Science &amp; Engineering</h3>
-              <p>Green University of Bangladesh</p>
-              <span>Dhaka, Bangladesh</span>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Feb 2022 – Mar 2022</div>
-            <div class="timeline-content">
-              <h3>Academic Intern</h3>
-              <p>DataHead Pvt. Limited</p>
-              <span>Dhaka, Bangladesh</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <p class="section-label">Education</p>
-        <h2>Academic background</h2>
-
-        <div class="card-grid two-col">
-          <article class="info-card">
-            <div class="card-topline">
-              <span>MSc</span>
-              <span>Pursuing</span>
-            </div>
-            <h3>M.Sc. in Computer Science &amp; Engineering</h3>
-            <p class="institution">Chittagong University of Engineering &amp; Technology</p>
-            <p><strong>CGPA:</strong> 3.75/4.00</p>
-            <p><strong>Thesis:</strong> A multi-modal deep learning framework for road damage detection.</p>
-          </article>
-
-          <article class="info-card">
-            <div class="card-topline">
-              <span>BSc</span>
-              <span>2022</span>
-            </div>
-            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
-            <p class="institution">Chittagong University of Engineering &amp; Technology</p>
-            <p><strong>CGPA:</strong> 3.81/4.00</p>
-            <p><strong>Thesis:</strong> Skin Lesion Image Segmentation Using Transfer Learning.</p>
-          </article>
-
-          <article class="info-card">
-            <div class="card-topline">
-              <span>HSC</span>
-              <span>2016</span>
-            </div>
-            <h3>Higher Secondary Certificate</h3>
-            <p class="institution">Dhaka City College</p>
-            <p><strong>GPA:</strong> 5.00/5.00</p>
-          </article>
-
-          <article class="info-card">
-            <div class="card-topline">
-              <span>SSC</span>
-              <span>2014</span>
-            </div>
-            <h3>Secondary School Certificate</h3>
-            <p class="institution">Govt. Model Girls' High School</p>
-            <p><strong>GPA:</strong> 5.00/5.00</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="section dark-section">
-      <div class="container">
-        <p class="section-label light">Research</p>
-        <h2>Research interests and technical strengths</h2>
-
-        <div class="interest-grid">
-          <div>Computer Vision</div>
-          <div>Machine Learning</div>
-          <div>Deep Learning</div>
-          <div>Artificial Intelligence</div>
-          <div>Medical Imaging</div>
-          <div>Intelligent Systems</div>
-        </div>
-
-        <div class="skills-grid">
-          <article>
-            <h3>Programming</h3>
-            <p>Python, C, C++, Java, SQL</p>
-          </article>
-          <article>
-            <h3>Frameworks &amp; Libraries</h3>
-            <p>PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib</p>
-          </article>
-          <article>
-            <h3>Tools</h3>
-            <p>Google Colab, Jupyter Notebook, VS Code, Android Studio, Spyder</p>
-          </article>
-          <article>
-            <h3>Web &amp; Documentation</h3>
-            <p>HTML5, CSS3, LaTeX, Overleaf, Microsoft Office</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section">
-      <div class="container">
-        <div class="section-heading-row">
-          <div>
-            <p class="section-label">Publications</p>
-            <h2>Peer-reviewed conference papers</h2>
+              <small>CGPA: 3.75/4.00 · Thesis: A Multi-Modal Deep Learning Framework for Road Damage Detection</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>B.Sc. in CSE</strong><span>2022</span></div>
+              <p>Chittagong University of Engineering &amp; Technology (CUET)</p>
+              <small>CGPA: 3.81/4.00 · Thesis: Skin Lesion Image Segmentation using Transfer Learning</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>Higher Secondary Certificate</strong><span>2016</span></div>
+              <p>Dhaka City College</p>
+              <small>GPA: 5.00/5.00</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>Secondary School Certificate</strong><span>2014</span></div>
+              <p>Govt. Model Girls’ High School</p>
+              <small>GPA: 5.00/5.00</small>
+            </article>
           </div>
-          <span class="count-badge">14 papers</span>
         </div>
 
-        <div class="publication-list">
-          <article class="publication">
-            <span class="pub-number">01</span>
-            <div>
-              <h3>A Modified U-Net for Skin Lesion Segmentation Using Transfer Learning</h3>
-              <p><strong>A. Akter</strong>, K. Deb, S. C. Tista, and K.-H. Jo</p>
-              <p>International Workshop on Intelligent Systems (IWIS), 2023, pp. 1–6.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">02</span>
-            <div>
-              <h3>AI-CABB: An AI-Enabled Integrated Pest Detection System for Enhancing Cabbage Cultivation Using Machine Learning</h3>
-              <p>A. A. Shahid, <strong>A. Akter</strong>, and M. S. Hossain</p>
-              <p>International Conference on Sustainable Technologies for Industry 5.0 (STI), 2023.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">03</span>
-            <div>
-              <h3>Fusion-based Model for Social Gathering Emotion Classification</h3>
-              <p>S. S. Aonty, <strong>A. Akter</strong>, and M. S. Arefin</p>
-              <p>International Conference on Electrical and Computer Engineering (ICECE), 2024.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">04</span>
-            <div>
-              <h3>A Unified Approach for Skin Lesion Classification on Generated Segmented Dataset</h3>
-              <p>M. Z. Haque, <strong>A. Akter</strong>, and M. S. Hossain</p>
-              <p>International Conference on Electrical, Computer and Communication Engineering (ECCE), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">05</span>
-            <div>
-              <h3>Moonshot: A Smartphone Application for University Students and Teachers Featuring Academic Integrity Assessment and Personal Wellbeing Assistance</h3>
-              <p>M. Chowdhury, <strong>A. Akter</strong>, and R. Tabassum</p>
-              <p>International Conference on Computing and Communication Technologies (ICCCT), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">06</span>
-            <div>
-              <h3>Blueprint: A Cyber Crime, Personal Security, and Police Assistant Mobile Application</h3>
-              <p>M. Chowdhury, <strong>A. Akter</strong>, E. A. Sazid, M. Z. Alam, M. S. Uddin, and K. F. Tonni</p>
-              <p>International Conference on Data Science and Business Systems (ICDSBS), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">07</span>
-            <div>
-              <h3>Postpartum Psychiatric Disorder Prediction Using Machine Learning and Explainable AI</h3>
-              <p>R. A. Abir, M. Chowdhury, L. T. Zeba, N. Karib, M. Y. Aradat, and <strong>A. Akter</strong></p>
-              <p>International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">08</span>
-            <div>
-              <h3>Venture: A Mosquito Disease Prevention Assistant Smartphone Application</h3>
-              <p>M. Chowdhury, <strong>A. Akter</strong>, T. M. Mitul, M. S. Chowdhury, R. Dhar, and I. Samiha</p>
-              <p>International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">09</span>
-            <div>
-              <h3>Marshal: Women's Gynaecological, Metabolic, and General Health Disorder Assistant Smartphone Application</h3>
-              <p>M. Chowdhury, M. Rahman, R. Ilman, P. Sen, <strong>A. Akter</strong>, and S. Farsi</p>
-              <p>International Conference on Emerging Computation and Information Technologies (ICECIT), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">10</span>
-            <div>
-              <h3>Hybrid CNN Framework Leveraging VGG16 for Multi-Class Brain Tumor Classification</h3>
-              <p>M. E. Ahmed, M. S. U. Sayem, A. H. Piash, and <strong>A. Akter</strong></p>
-              <p>IEEE WIE Conference on Electrical and Computer Engineering (WIECON-ECE), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">11</span>
-            <div>
-              <h3>An End-to-End Framework for Hair Artifact Removal and Skin Lesion Segmentation Using Xception-Based U-Net</h3>
-              <p><strong>A. Akter</strong>, O. I. Alam, and R. Walee</p>
-              <p>IEEE WIE Conference on Electrical and Computer Engineering (WIECON-ECE), 2025.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">12</span>
-            <div>
-              <h3>A Machine Learning and Explainable AI-Based Multiclass Police Fraud Prediction Scheme with SHAP-Based Interpretability</h3>
-              <p>M. Chowdhury, J. Islam, M. A. I. Semon, S. Sarkar, M. M. Barua, and <strong>A. Akter</strong></p>
-              <p>International Conference on Electrical, Computer &amp; Telecommunication Engineering (ICECTE), 2026.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">13</span>
-            <div>
-              <h3>A Multiclass Financial Transaction Fraud Prediction Scheme Using Machine Learning, Ensemble Feature Selection, and XAI</h3>
-              <p>M. A. I. Semon, M. Chowdhury, <strong>A. Akter</strong>, M. R. Jafrin, A. Singha, and J. Islam</p>
-              <p>IEEE International Conference on Quantum Photonics, Artificial Intelligence &amp; Networking (QPAIN), 2026.</p>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-number">14</span>
-            <div>
-              <h3>Prediction of Heterogeneous Cyber Violence Against Women Using Machine Learning and SHAP</h3>
-              <p>M. Chowdhury, R. Ilman, I. J. Chowdury, S. Abir, T. Islam, and <strong>A. Akter</strong></p>
-              <p>IEEE International Conference on Quantum Photonics, Artificial Intelligence &amp; Networking (QPAIN), 2026.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section soft-bg">
-      <div class="container">
-        <p class="section-label">Projects</p>
-        <h2>Selected undergraduate projects</h2>
-
-        <div class="card-grid three-col">
-          <article class="project-card">
-            <span class="project-year">2021</span>
-            <h3>Skin Lesion Segmentation and Classification</h3>
-            <p>Developed a Python application to segment and classify skin lesions using deep learning.</p>
-            <p class="tech">Python · Keras · TensorFlow</p>
-          </article>
-
-          <article class="project-card">
-            <span class="project-year">2019</span>
-            <h3>Real-Time Child Surveillance System</h3>
-            <p>Designed a real-time object detection application to identify and classify safe and unsafe objects.</p>
-            <p class="tech">Python · Keras · TensorFlow</p>
-          </article>
-
-          <article class="project-card">
-            <span class="project-year">2018</span>
-            <h3>Student Advising System</h3>
-            <p>Built a web-based platform to facilitate communication between students and teachers during academic advising.</p>
-            <p class="tech">PHP · HTML · CSS</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-column-details">
         <div>
-          <p class="section-label">Recognition</p>
-          <h2>Awards and professional service</h2>
-        </div>
-
-        <div class="details-stack">
-          <article>
-            <h3>Academic excellence</h3>
-            <ul>
-              <li>Yearly Academic Scholarship for Academic Excellence, CUET (2017–2022)</li>
-              <li>Two-year Merit J.S.C. Scholarship, Ministry of Education, Government of Bangladesh</li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>Professional training</h3>
-            <ul>
-              <li>Foundation Training for Faculty Members, CUET, 2024</li>
-              <li>Faculty Induction Training, United International University, 2023</li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>Academic service</h3>
-            <ul>
-              <li>Undergraduate thesis supervision, CUET</li>
-              <li>DeepVision Lab monitoring</li>
-              <li>Reviewer: ECCE 2025, ECCT 2026, BIM 2026</li>
-              <li>Organizer: ECCE 2025</li>
-            </ul>
-          </article>
+          <h3 class="subheading">Work experience</h3>
+          <div class="compact-list">
+            <article>
+              <div class="item-top"><strong>Lecturer, Department of CSE</strong><span>Nov 2023 – Present</span></div>
+              <p>Chittagong University of Engineering &amp; Technology (CUET)</p>
+              <small>Chittagong, Bangladesh</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>Lecturer, Department of CSE</strong><span>Jul 2023 – Nov 2023</span></div>
+              <p>United International University</p>
+              <small>Dhaka, Bangladesh</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>Lecturer, Department of CSE</strong><span>Nov 2022 – Jul 2023</span></div>
+              <p>Green University of Bangladesh</p>
+              <small>Dhaka, Bangladesh</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>Academic Intern</strong><span>Feb 2022 – Mar 2022</span></div>
+              <p>DataHead Pvt. Limited</p>
+              <small>Dhaka, Bangladesh</small>
+            </article>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="container contact-card">
-        <div>
-          <p class="section-label light">Contact</p>
-          <h2>Let’s connect</h2>
-          <p>
-            I welcome opportunities for research collaboration, academic discussion,
-            and doctoral research in computer vision, deep learning, and medical imaging.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="button light-button" href="mailto:afroza.s.galaxy@gmail.com">Send Email</a>
-          <a class="button outline-light" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Afroza Akter. All rights reserved.</p>
-      <a href="#home">Back to top ↑</a>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="research" class="section dark-section">
+    <div class="container research-layout">
+      <div>
+        <p class="section-label light">Research</p>
+        <h2>Interests</h2>
+        <div class="chip-grid">
+          <span>Computer Vision</span>
+          <span>Deep Learning</span>
+          <span>Medical Imaging</span>
+          <span>Intelligent Systems</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label light">Skills</p>
+        <h2>Technical strengths</h2>
+        <div class="skill-lines">
+          <p><strong>Programming:</strong> Python, C, C++, Java, SQL</p>
+          <p><strong>Web:</strong> HTML5, CSS3</p>
+          <p><strong>Frameworks:</strong> Matplotlib, NumPy, Pandas, Scikit-learn, Keras, TensorFlow</p>
+          <p><strong>Tools:</strong> VS Code, Google Colab, Jupyter Notebook, Spyder</p>
+          <p><strong>Other:</strong> LaTeX, Overleaf, Microsoft Word, PowerPoint, Excel</p>
+        </div>
+        <div class="soft-skill-row">
+          <span>Creativity</span><span>Teamwork</span><span>Critical Thinking</span><span>Adaptability</span><span>Communication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-heading-row">
+        <div>
+          <p class="section-label">Publications</p>
+          <h2>Peer-reviewed conference papers</h2>
+        </div>
+        <span class="count-badge">14 papers</span>
+      </div>
+
+      <div class="publication-grid" id="publicationGrid">
+        <article class="publication-card"><span>01</span><div><h3>A Modified UNet for Skin Lesion Segmentation using Transfer Learning</h3><p><strong>A. Akter</strong>, K. Deb, S. C. Tista, K.-H. Jo · IWIS 2023</p></div></article>
+        <article class="publication-card"><span>02</span><div><h3>AI-CABB: An AI-Enabled Integrated Pest Detection System for Enhancing Cabbage Cultivation Using Machine Learning</h3><p>A. A. Shahid, <strong>A. Akter</strong>, M. S. Hossain · STI 2023</p></div></article>
+        <article class="publication-card"><span>03</span><div><h3>Fusion-based Model for Social Gathering Emotion Classification</h3><p>S. S. Aonty, <strong>A. Akter</strong>, M. S. Arefin · ICECE 2024</p></div></article>
+        <article class="publication-card"><span>04</span><div><h3>A Unified Approach for Skin Lesion Classification on Generated Segmented Dataset</h3><p>M. Z. Haque, <strong>A. Akter</strong>, M. S. Hossain · ECCE 2025</p></div></article>
+        <article class="publication-card"><span>05</span><div><h3>Moonshot: A Smartphone Application for University Students and Teachers Featuring Academic Integrity Assessment and Personal Wellbeing Assistance</h3><p>M. Chowdhury, <strong>A. Akter</strong>, R. Tabassum · ICCCT 2025</p></div></article>
+        <article class="publication-card"><span>06</span><div><h3>Blueprint: A Cyber Crime, Personal Security, and Police Assistant Mobile Application</h3><p>M. Chowdhury, <strong>A. Akter</strong>, et al. · ICDSBS 2025</p></div></article>
+
+        <article class="publication-card extra-publication"><span>07</span><div><h3>Postpartum Psychiatric Disorder Prediction Using Machine Learning and Explainable AI</h3><p>R. A. Abir, et al., <strong>A. Akter</strong> · CSITSS 2025</p></div></article>
+        <article class="publication-card extra-publication"><span>08</span><div><h3>Venture: A Mosquito Disease Prevention Assistant Smartphone Application</h3><p>M. Chowdhury, <strong>A. Akter</strong>, et al. · CSITSS 2025</p></div></article>
+        <article class="publication-card extra-publication"><span>09</span><div><h3>Marshal: Women's Gynaecological, Metabolic, and General Health Disorder Assistant Smartphone Application</h3><p>M. Chowdhury, et al., <strong>A. Akter</strong> · ICECIT 2025</p></div></article>
+        <article class="publication-card extra-publication"><span>10</span><div><h3>Hybrid CNN Framework Leveraging VGG16 for Multi-Class Brain Tumor Classification</h3><p>M. E. Ahmed, M. S. U. Sayem, A. H. Piash, <strong>A. Akter</strong> · WIECON-ECE 2025</p></div></article>
+        <article class="publication-card extra-publication"><span>11</span><div><h3>An End-to-End Framework for Hair Artifact Removal and Skin Lesion Segmentation Using Xception-Based U-Net</h3><p><strong>A. Akter</strong>, O. I. Alam, R. Walee · WIECON-ECE 2025</p></div></article>
+        <article class="publication-card extra-publication"><span>12</span><div><h3>A Machine Learning and Explainable AI-Based Multiclass Police Fraud Prediction Scheme with SHAP Based Interpretability</h3><p>M. Chowdhury, et al., <strong>A. Akter</strong> · ICECTE 2026</p></div></article>
+        <article class="publication-card extra-publication"><span>13</span><div><h3>A Multiclass Financial Transaction Fraud Prediction Scheme Using Machine Learning, Ensemble Feature Selection, and XAI Technique</h3><p>M. A. I. Semon, M. Chowdhury, <strong>A. Akter</strong>, et al. · QPAIN 2026</p></div></article>
+        <article class="publication-card extra-publication"><span>14</span><div><h3>Prediction of Heterogeneous Cyber Violence Against Women Using Machine Learning and SHAP Technique</h3><p>M. Chowdhury, et al., <strong>A. Akter</strong> · QPAIN 2026</p></div></article>
+      </div>
+
+      <div class="center-action">
+        <button class="button secondary small-button" id="togglePublications" type="button">Show all 14 publications</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section soft-bg">
+    <div class="container">
+      <p class="section-label">Projects &amp; supervision</p>
+      <h2>Selected academic work</h2>
+
+      <div class="projects-supervision-grid">
+        <div>
+          <h3 class="subheading">Undergraduate projects</h3>
+          <div class="mini-card-grid">
+            <article class="mini-card"><span>2021</span><h3>Skin Lesion Segmentation and Classification</h3><p>Python · Keras · TensorFlow</p></article>
+            <article class="mini-card"><span>2019</span><h3>Real-Time Child Surveillance System</h3><p>Python · Keras · TensorFlow</p></article>
+            <article class="mini-card"><span>2018</span><h3>Student Advising System</h3><p>PHP · HTML · CSS</p></article>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="subheading">Undergraduate thesis supervision</h3>
+          <div class="compact-list">
+            <article>
+              <div class="item-top"><strong>Genre Classification of Bengali Poetry</strong><span>2026</span></div>
+              <p>Deep Learning</p>
+              <small>Model development for Bengali poetry genre classification.</small>
+            </article>
+            <article>
+              <div class="item-top"><strong>Bone Fracture Classification</strong><span>2025</span></div>
+              <p>Deep Learning</p>
+              <small>Model development for bone fracture detection and classification.</small>
+            </article>
+          </div>
+
+          <h3 class="subheading second-heading">Independent initiative</h3>
+          <div class="initiative-card">
+            <div class="item-top"><strong>DeepVision Lab Monitoring</strong><span>Aug 2023 – Present</span></div>
+            <p>Founder &amp; Research Supervisor</p>
+            <small>Independent Online Research Initiative</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="service" class="section">
+    <div class="container">
+      <p class="section-label">Recognition &amp; service</p>
+      <h2>Academic contributions</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Awards</h3>
+          <ul>
+            <li>Yearly Academic Scholarship for Academic Excellence, CUET (2017–2022)</li>
+            <li>Two-year Merit J.S.C. Scholarship, Ministry of Education, Govt. of Bangladesh</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Reviewing &amp; moderation</h3>
+          <ul>
+            <li>Reviewer: ECCT 2026</li>
+            <li>Reviewer: ECCE 2025</li>
+            <li>Reviewer: BIM 2025</li>
+            <li>Moderator: ECCE 2025</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>References</h3>
+          <p><strong>Dr. Kaushik Deb</strong><br>Professor, Department of CSE, CUET</p>
+          <p><strong>A.H.M. Ashfak Habib</strong><br>Professor, Department of CSE, CUET</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container contact-card">
+      <div>
+        <p class="section-label light">Contact</p>
+        <h2>Let’s connect</h2>
+        <p>For research collaboration, academic discussion, and doctoral research opportunities.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button light-button" href="mailto:afroza.akter.cse22@gmail.com">Send Email</a>
+        <a class="button outline-light" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <p>© <span id="year"></span> Afroza Akter. All rights reserved.</p>
+    <a href="#home">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
