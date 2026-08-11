@@ -662,3 +662,83 @@ footer {
     display: block;
 }
 
+
+/* ---------- Compact academic layout ---------- */
+.section {
+  padding: 52px 0;
+}
+
+h2 {
+  margin-bottom: 22px;
+  font-size: clamp(1.75rem, 3.2vw, 2.55rem);
+}
+
+.split-grid,
+.two-column-details {
+  gap: 48px;
+}
+
+.timeline-item {
+  grid-template-columns: 190px 1fr;
+  gap: 28px;
+  padding: 18px 0;
+}
+
+.info-card,
+.project-card {
+  padding: 20px;
+}
+
+.card-grid {
+  gap: 16px;
+}
+
+.interest-grid div {
+  padding: 12px 16px;
+}
+
+.skills-grid {
+  margin-top: 28px;
+  gap: 18px;
+}
+
+.skills-grid article {
+  padding-top: 14px;
+}
+
+.count-badge {
+  margin-bottom: 24px;
+}
+
+.publication {
+  gap: 16px;
+  padding: 17px 0;
+}
+
+.project-year {
+  margin-bottom: 9px;
+}
+
+.details-stack article {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+footer {
+  padding: 18px 0;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 42px 0;
+  }
+
+  .timeline-item {
+    gap: 5px;
+    padding: 15px 0;
+  }
+}
